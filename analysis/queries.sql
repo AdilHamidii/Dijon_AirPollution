@@ -1,11 +1,4 @@
--- =====================================================
--- Air Quality Analytics Queries
--- Compatible with star schema
--- =====================================================
 
--- -----------------------------------------------------
--- Daily average pollution per pollutant
--- -----------------------------------------------------
 SELECT
     l.city,
     DATE(aqm.measurement_time) AS day,
@@ -25,9 +18,7 @@ ORDER BY
     p.parameter;
 
 
--- -----------------------------------------------------
--- Monthly pollution average
--- -----------------------------------------------------
+
 SELECT
     l.city,
     DATE_TRUNC('month', aqm.measurement_time) AS month,
@@ -47,9 +38,6 @@ ORDER BY
     p.parameter;
 
 
--- -----------------------------------------------------
--- Pollution peak values
--- -----------------------------------------------------
 SELECT
     l.city,
     p.parameter,
@@ -66,9 +54,7 @@ ORDER BY
     max_value DESC;
 
 
--- -----------------------------------------------------
--- Hourly trend (for dashboards)
--- -----------------------------------------------------
+
 SELECT
     aqm.measurement_time,
     p.parameter,
@@ -80,9 +66,6 @@ ORDER BY
     aqm.measurement_time;
 
 
--- -----------------------------------------------------
--- Number of measurements per pollutant
--- -----------------------------------------------------
 SELECT
     p.parameter,
     COUNT(*) AS total_measurements
