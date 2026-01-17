@@ -1,0 +1,5 @@
+pandas
+requests
+graphviz
+psycopg2-binary
+sqlalchemy
