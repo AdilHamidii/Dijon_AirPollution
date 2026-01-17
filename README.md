@@ -122,19 +122,19 @@ The project includes interactive dashboards built with **Metabase**.
 
 ### MAIN DASHBOARD 
 
-![Dashboard](dashboard/screenshots/dashboard.png)
+![Dashboard](dashboard/dashboard.png)
 
 #### Daily PM10
 
-![Daily PM10](dashboard/screenshots/dijon10pm.png)
+![Daily PM10](dashboard/dijon10pm.png)
 
 #### Pollution Peaks
 
-![Peaks](dashboard/screenshots/airq.png)
+![Peaks](dashboard/airq.png)
 
 #### Max Pollutants
 
-![Max](dashboard/screenshots/pollutant.png)
+![Max](dashboard/pollutant.png)
 
 ---
 
